@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="btn_login">Login</string>
+
+    <string name="username_label">Usernanme</string>
+    <string name="username_hint">email@email.com</string>
+
+    <string name="paasword_label">Password</string>
 </resources>
