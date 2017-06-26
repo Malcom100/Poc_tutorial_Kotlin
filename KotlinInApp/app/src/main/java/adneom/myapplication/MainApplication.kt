@@ -10,12 +10,12 @@ class MainApplication : Application() {
 
     //var applicationComponent : ApplicationComponent? = null
     companion object {
-        lateinit var applicationComponent : ApplicationComponent
+        @JvmStatic lateinit var applicationComponent : ApplicationComponent
     }
 
     override fun onCreate() {
         super.onCreate()
 
-        //DaggerApplicationComponent.builder().build();
+        applicationComponent = DaggerApplicationComponent.builder().applicationModule(ApplicationModule(this)).build();
     }
 }

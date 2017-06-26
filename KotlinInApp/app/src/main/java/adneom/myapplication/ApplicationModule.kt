@@ -11,17 +11,16 @@ import javax.inject.Singleton
  */
 
 @Module
-class ApplicationModule(val application : Application) {
-
+class ApplicationModule(private val application : Application) {
 
     @Provides
     @Singleton
     fun providesApplicationContext() : Context {
-        return application;
+        return application
     }
 
     @Provides
     fun test() : String {
-        return "my test ".plus("!!!");
+        return "my test ".plus("!!!")
     }
 }
